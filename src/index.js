@@ -1,16 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
-
-import "./styles.css";
-
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
+import React, { Component } from "react";
+import ReactDom from "react-dom";
+import Slider from "./components/slider";
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    return <Slider />;
+  }
 }
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+const root = document.getElementById("root");
+ReactDom.render(<App />, root);
